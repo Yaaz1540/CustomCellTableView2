@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomCellTableView2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GTF-fI-OFF">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <color key="separatorColor" systemColor="systemYellowColor"/>
+                                <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome To My Table View" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="468" id="L4p-7k-N4e">
+                                    <rect key="frame" x="0.0" y="156" width="414" height="220"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                    <nil key="highlightedColor"/>
+                                    <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <size key="shadowOffset" width="-2" height="2"/>
+                                </label>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="countryCell" rowHeight="100" id="KSd-1e-d9Z" customClass="CountryTVC" customModule="CustomCellTableView2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KSd-1e-d9Z" id="dpI-Xi-jOp">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jnN-vY-a8z">
+                                                    <rect key="frame" x="20" y="11" width="374" height="78"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Afg" translatesAutoresizingMaskIntoConstraints="NO" id="WSC-QW-Uz7">
+                                                            <rect key="frame" x="0.0" y="9" width="60" height="60"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="60" id="RHh-7h-Dwh"/>
+                                                                <constraint firstAttribute="height" constant="60" id="l36-n4-TvF"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Afghanistan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BrN-Ql-FSt">
+                                                            <rect key="frame" x="70" y="10" width="294" height="58"/>
+                                                            <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="25"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="WSC-QW-Uz7" firstAttribute="centerY" secondItem="jnN-vY-a8z" secondAttribute="centerY" id="4Ud-ew-aBc"/>
+                                                        <constraint firstItem="BrN-Ql-FSt" firstAttribute="top" secondItem="jnN-vY-a8z" secondAttribute="top" constant="10" id="Brq-zH-A4X"/>
+                                                        <constraint firstAttribute="bottom" secondItem="BrN-Ql-FSt" secondAttribute="bottom" constant="10" id="Qdn-74-xtk"/>
+                                                        <constraint firstAttribute="trailing" secondItem="BrN-Ql-FSt" secondAttribute="trailing" constant="10" id="btZ-U3-FrB"/>
+                                                        <constraint firstItem="WSC-QW-Uz7" firstAttribute="leading" secondItem="jnN-vY-a8z" secondAttribute="leading" id="eyW-MH-8Zq"/>
+                                                        <constraint firstItem="BrN-Ql-FSt" firstAttribute="leading" secondItem="WSC-QW-Uz7" secondAttribute="trailing" constant="10" id="fqS-N0-o3G"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="jnN-vY-a8z" firstAttribute="leading" secondItem="dpI-Xi-jOp" secondAttribute="leadingMargin" id="Zzy-wQ-ZIE"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="jnN-vY-a8z" secondAttribute="bottom" id="dtG-1F-cEO"/>
+                                                <constraint firstItem="jnN-vY-a8z" firstAttribute="top" secondItem="dpI-Xi-jOp" secondAttribute="topMargin" id="kiD-zt-tq6"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="jnN-vY-a8z" secondAttribute="trailing" id="xwE-4S-zgZ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="countryImgView" destination="WSC-QW-Uz7" id="MfD-Zy-0lJ"/>
+                                            <outlet property="countryLbl" destination="BrN-Ql-FSt" id="EoK-1G-ekt"/>
+                                            <outlet property="countryView" destination="jnN-vY-a8z" id="y5T-DW-3fk"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GTF-fI-OFF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LiB-gq-Bm7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GTF-fI-OFF" secondAttribute="bottom" id="REh-HN-YFx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GTF-fI-OFF" secondAttribute="trailing" id="h15-Nk-7do"/>
+                            <constraint firstItem="GTF-fI-OFF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pEg-Em-EOx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countryTableView" destination="GTF-fI-OFF" id="m1K-Lm-RwA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-184.05797101449278" y="65.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Afg" width="800" height="533"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
